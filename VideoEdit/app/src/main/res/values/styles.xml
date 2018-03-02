@@ -1,0 +1,289 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BlogToolbarTextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/c_333333</item>
+    </style>
+
+    <!-- toolbar返回按钮 -->
+    <style name="BlogToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:background">?android:attr/actionBarItemBackground</item><!-- v21 用的是 actionBarItemBackground -->
+        <item name="android:paddingLeft">@dimen/toolbar_nav_menu_padding</item>
+        <item name="android:paddingRight">25.5dp</item><!--@dimen/toolbar_nav_menu_padding + 10 计算的否则不准确-->
+        <item name="android:minWidth">56dp</item>
+    </style>
+
+    <!-- 菜单按钮 -->
+    <style name="BlogToolbarOverflowButtonStyle" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/reader_more_selector</item>
+        <item name="android:paddingLeft">@dimen/toolbar_nav_menu_padding</item>
+        <item name="android:paddingRight">@dimen/toolbar_nav_menu_padding</item>
+        <item name="android:minWidth">56dp</item>
+    </style>
+    <!-- 菜单悬浮 -->
+    <style name="BlogToolbarOverflowMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <!--<style name="MyActionOverflowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">-->
+    <!--<item name="overlapAnchor">false</item>-->
+    <!--<item name="android:dropDownWidth">wrap_content</item>-->
+    <!--<item name="android:paddingRight">0dp</item>-->
+    <!--<item name="android:popupBackground">?attr/menuPopupBackground</item>-->
+    <!--<item name="android:dropDownVerticalOffset">?attr/actionBarSize</item>-->
+    <!--<item name="android:dropDownHorizontalOffset">0dp</item>-->
+    <!--</style>-->
+
+    <style name="BlogDropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">@drawable/menu_divider_line</item>
+    </style>
+
+
+    <style name="BlogActionMenuTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TabTextStyle.SinaBlog" parent="android:Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/translucent_grey</item>
+    </style>
+
+    <style name="TabBarStyle.SinaBlog" parent="@android:style/Widget.Holo.ActionBar.TabBar">
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@drawable/tab_divider_wordpress</item>
+    </style>
+
+    <style name="BlogTheme" parent="@style/AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlHighlight">#506f6f6f</item>
+    </style>
+
+    <style name="BlogPictureTheme" parent="@style/BlogTheme">
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <style name="SplashStyle" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/splash_window_background</item>
+    </style>
+
+    <style name="BlogTheme.Animation">
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <style name="BlogTheme.LightMenuText">
+        <!-- bar上的menu文字颜色 -->
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_up</item>
+        <!-- 打开activity，设置activity进入展示动画 -->
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <!-- 打开activity，设置上个activity离开动画 -->
+        <!-- 下面两个属性不起作用 -->
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <!-- 结束activity，设置上个activity进入动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_down</item>
+        <!-- 结束activity，设置当前activity离开动画 -->
+    </style>
+
+    <!--<style name="SwipeToRefresh">-->
+        <!--<item name="refreshIndicatorColor">@color/color_accent</item>-->
+    <!--</style>-->
+
+    <style name="Animation.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationStyle</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationStyle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/view_down_to_up_translate</item>
+        <item name="android:windowExitAnimation">@anim/view_up_to_down_translate</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="CommonDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SinaDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 分割线样式 -->
+    <style name="Divider_Style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider_line</item>
+    </style>
+
+    <style name="style_setting_primary_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/c_333333</item>
+    </style>
+    <style name="style_setting_item_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <!--<item name="android:background">?attr/clickItemBackgroundDefaultWhite</item>-->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="style_setting_action_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--<style name="style_setting_action_button.SwitchButtonStyle">-->
+        <!--<item name="kswThumbColor">@color/c_ffffff</item>-->
+        <!--<item name="kswBackDrawable">@drawable/switch_background</item>-->
+        <!--<item name="kswThumbWidth">28dp</item>&lt;!&ndash; 触摸圆圈的宽度 &ndash;&gt;-->
+        <!--<item name="kswThumbHeight">28dp</item>&lt;!&ndash; 触摸圆圈的高度 （实际上是SwitchButton的控件高度） &ndash;&gt;-->
+        <!--<item name="kswBackMeasureRatio">2.06</item>&lt;!&ndash; SwitchButton的控件长度比例数＝ 长度／宽度（57.5/28） &ndash;&gt;-->
+        <!--<item name="kswThumbMargin">0.5dp</item>&lt;!&ndash; 边框大小 &ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="style_setting_secondary_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="style_login_by_third_party">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:drawablePadding">7dp</item>
+    </style>
+
+    <style name="style_login_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/login_edit_text_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/c_b3b3b3</item>
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+    <style name="style_login_ok">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@drawable/login_btn_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_txt_selector</item>
+    </style>
+    <style name="TranslucentTheme" parent="BlogTheme">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="TranslucentTheme.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="ProgressView" />
+
+    <!-- Base theme for the ProgressView. -->
+    <!--<style name="ProgressView.attrs">-->
+        <!--<item name="android:orientation">horizontal</item>-->
+        <!--<item name="text_on">@string/add_attention</item>-->
+        <!--<item name="text_off">@string/allready_attention</item>-->
+        <!--<item name="android:textColor">@color/attention_txt_selecter</item>-->
+        <!--<item name="android:textSize">14sp</item>-->
+        <!--<item name="android:src">@mipmap/ab_common_attention_add</item>-->
+        <!--<item name="android:background">@drawable/attention_selector_small</item>-->
+    <!--</style>-->
+
+    <!--<style name="MyProgressView_Button">-->
+        <!--<item name="android:orientation">horizontal</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:background">@drawable/attention_selector_small</item>-->
+        <!--<item name="textColor">@color/attention_txt_selecter</item>-->
+        <!--<item name="textSize">14sp</item>-->
+    <!--</style>-->
+
+    <!--<style name="MyProgressView_Attention" parent="MyProgressView_Button">-->
+        <!--<item name="text_on">@string/add_attention</item>-->
+        <!--<item name="text_off">@string/allready_attention</item>-->
+        <!--<item name="src">@mipmap/ab_common_attention_add</item>-->
+    <!--</style>-->
+
+    <style name="MsgRedPoint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">46dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:background">@drawable/red_point_bg_msg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MySearchButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <!--<item name="android:background">?attr/clickItemBackground</item>-->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:src">@drawable/selector_home_search</item>
+    </style>
+
+    <style name="ToolbarPopStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">#ffffff</item>
+        <item name="android:itemTextAppearance">@style/ToolbarMenuTextAppearance</item>
+    </style>
+
+    <style name="ToolbarPopStyleNight" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">#191919</item>
+        <item name="android:itemTextAppearance">@style/ToolbarMenuTextAppearanceNight</item>
+    </style>
+
+    <style name="ToolbarMenuTextAppearance">
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="ToolbarMenuTextAppearanceNight">
+        <item name="android:textColor">#808080</item>
+    </style>
+
+</resources>
+

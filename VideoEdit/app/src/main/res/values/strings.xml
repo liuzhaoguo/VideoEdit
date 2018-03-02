@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VideoEdit</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_ok">确定</string>
+    <string name="imageview_desc">none</string>
+    <string name="loading_msg_wait">请稍候…</string>
+</resources>

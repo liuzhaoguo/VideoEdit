@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="statusbar_view_height">0dp</dimen>
+    <dimen name="toolbar_nav_menu_padding">15.5dp</dimen>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_margin">@dimen/fab_margin_default</dimen>
+    <dimen name="fab_margin_default">16dp</dimen>
+
+    <dimen name="common_margin_default">16dp</dimen>
+    <dimen name="splash_margin_default">16dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="tabs_height">48dp</dimen>
+    <dimen name="article_top_bg_height">110dp</dimen>
+
+    <dimen name="text_cursor_padding_top">-2dp</dimen>
+    <dimen name="text_cursor_padding_bottom">-8dp</dimen>
+
+    <dimen name="dim_70">70dp</dimen>
+    <dimen name="dim_0">0dp</dimen>
+
+    <dimen name="default_line_indicator_line_width">6dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">2dp</dimen>
+    <bool name="default_line_indicator_centered">true</bool>
+
+    <dimen name="feed_user_name_max_width">128dp</dimen>
+    <dimen name="feed_user_pic_width">40dp</dimen>
+    <dimen name="feed_user_pic_height">40dp</dimen>
+    <dimen name="feed_user_pic_margin_right">16dp</dimen>
+    <dimen name="feed_user_info_layout_margin_bottom">12dp</dimen>
+    <dimen name="feed_desc_margin_top">7dp</dimen>
+    <dimen name="feed_bottom_margin_top">16dp</dimen>
+    <dimen name="feed_title_lineSpacingExtra">20px</dimen>
+    <dimen name="feed_desc_lineSpacingExtra">18px</dimen>
+    <dimen name="feed_theme_chip_radius">10px</dimen>
+    <dimen name="feed_theme_chip_stroke">0.5dp</dimen>
+    <dimen name="feed_theme_chip_text_padding">7dp</dimen>
+
+    <dimen name="camera_bottom_bar_bottom">18dp</dimen>
+    <dimen name="menu_item_padding">16dp</dimen>
+    <dimen name="user_center_pic_layout_height">193dp</dimen><!--152+41-->
+    <dimen name="user_center_bg_height">152dp</dimen>
+    <dimen name="empty_view_paddingTop">122dp</dimen>
+    <dimen name="sign_image_height">347.5dp</dimen>
+    <dimen name="sign_author_divider_left">34.5dp</dimen>
+    <dimen name="sign_author_layout_left">14dp</dimen>
+    <dimen name="sign_content_layout_left">8dp</dimen>
+    <dimen name="sign_content_layout_right">14dp</dimen>
+    <dimen name="sign_content_tv_columnSpacing">12dp</dimen>
+    <dimen name="sign_time_textSize">13sp</dimen>
+</resources>

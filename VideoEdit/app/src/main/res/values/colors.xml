@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="white_night">#191919</color>
+    <color name="black">@android:color/black</color>
+
+    <color name="color_primary">@color/white</color>
+    <color name="color_primary_night">@color/white_night</color>
+    <!-- 主调颜色（即整个app的主调色） -->
+    <color name="color_accent">#ff7043</color>
+    <color name="color_accent_night">#A34424</color>
+
+    <!-- 背景颜色 -->
+    <color name="window_background">@color/white</color>
+    <color name="item_material_press">#eeeeee</color>
+
+    <color name="translucent_grey">#80888888</color>
+
+    <!-- 分割线颜色 -->
+    <color name="divider_line">#eeeeee</color>
+    <color name="divider_line_night">#262626</color>
+
+    <!-- 首页底部bar的字体颜色 -->
+    <color name="tab_text_normal_color">@color/c_666666</color>
+    <color name="tab_text_normal_selected">@color/color_accent</color>
+
+    <!-- 页面有间隔item的其余空白部分颜色 -->
+    <color name="common_page_bg_space">#f7f7f7</color>
+    <color name="common_page_bg_space_night">#121212</color>
+    <!-- 页面没间隔item的其余空白部分颜色 -->
+    <color name="common_page_bg_simple">#ffffff</color>
+
+    <!-- 和主色调相关的color_accent_透明度 -->
+    <color name="color_accent_b2">#b2ff7043</color>
+    <color name="color_accent_f9">#f9ff7043</color>
+    <color name="color_accent_66">#66ff7043</color>
+
+    <color name="c_ffffff">#ffffff</color>
+    <color name="c_ffffff_70">#b2ffffff</color>
+    <color name="c_fbfbfb">#fbfbfb</color>
+
+    <color name="c_e2e2e2">#e2e2e2</color>
+    <color name="c_8c8c8c">#8c8c8c</color>
+    <color name="c_2b2b2b">#2b2b2b</color>
+    <color name="c_2b2b2b_70">#b22b2b2b</color>
+    <color name="c_b3b3b3">#b3b3b3</color>
+    <color name="c_efefef">#efefef</color>
+    <color name="c_ededed">#ededed</color>
+    <color name="c_b2b2b2">#b2b2b2</color>
+    <color name="c_cccccc">#cccccc</color>
+    <color name="c_f7f7f7">#f7f7f7</color>
+    <color name="c_666666">#666666</color>
+    <color name="c_e87e57">#e87e57</color>
+    <color name="c_c7c7c7">#c7c7c7</color>
+    <color name="c_dadada">#dadada</color>
+    <color name="c_3f3f3f">#3f3f3f</color>
+    <color name="c_d6d6d6">#d6d6d6</color>
+    <color name="c_333333">#333333</color>
+    <color name="c_333333_night">#808080</color>
+    <color name="c_555555">#555555</color>
+    <color name="c_979797">#979797</color>
+    <color name="c_C6B0A0">#C6B0A0</color>
+    <color name="c_c2c2c2">#c2c2c2</color>
+    <color name="c_9e7d64">#9e7d64</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_999999_night">#666666</color>
+    <color name="c_e7e7e7">#e7e7e7</color>
+    <color name="c_f9f9f9">#f9f9f9</color>
+    <color name="c_ff794f">#ff794f</color>
+    <color name="c_eeeeee">#eeeeee</color>
+    <color name="c_f46b40">#f46b40</color>
+    <color name="c_dad0c9">#dad0c9</color>
+    <color name="c_434343">#434343</color>
+    <color name="c_dbdbdb">#dbdbdb</color>
+    <color name="c_a5a5a5">#a5a5a5</color>
+    <color name="c_ffe6dd">#ffe6dd</color>
+    <color name="c_f8f8f8_94">#f0f8f8f8</color>
+    <color name="c_A9A9A9">#A9A9A9</color>
+    <color name="c_fff7f7f7">#FFF7F7F7</color>
+
+    <color name="splash_bg">#f2f2f2</color>
+    <color name="tab_selected_bg">#C4E1E1</color>
+    <color name="tab_home_text_default">#666666</color>
+    <color name="tab_home_text_selected">@color/color_accent</color>
+    <color name="tab_home_bg_default">#00ffffff</color>
+    <color name="tab_home_bg_selected">@color/color_accent</color>
+    <color name="action_bar_toast_bg">#99ff7043</color>
+    <color name="me_divider_line">#33ffffff</color>
+    <color name="dialog_press">#20000000</color>
+
+    <color name="default_line_indicator_selected_color">#e42b2b2b</color>
+    <color name="default_line_indicator_unselected_color">#e4ffffff</color>
+
+    <color name="color_background_night">#191919</color>
+    <color name="color_background_night2">#121212</color>
+    <color name="color_text1_night">#808080</color>
+    <color name="color_text2_night">#666666</color>
+    <color name="color_orange_night">#704f39</color>
+    <color name="color_divider_night">#2e2e2e</color>
+    <color name="color_divider_night2">#262626</color>
+    <color name="color_other_night">#574437</color>
+    <color name="color_other_night2">#75331e</color>
+    <color name="color_other_night3">#262626</color>
+</resources>
