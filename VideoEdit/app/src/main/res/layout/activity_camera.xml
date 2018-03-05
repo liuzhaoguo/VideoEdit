@@ -1,114 +1,116 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#000000"
-                android:descendantFocusability="blocksDescendants"
-                android:orientation="vertical">
-
-    <RelativeLayout
-        android:id="@+id/camera_header_bar"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:clickable="true">
-
-        <ImageView
-            android:id="@+id/cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="12dip"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dip"
-            android:src="@mipmap/btn_close_camera"/>
-
-        <ImageView
-            android:id="@+id/btn_switch_camera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:contentDescription="@string/imageview_desc"
-            android:src="@mipmap/btn_switch_camera"/>
-
-        <ImageView
-            android:id="@+id/btn_flash_mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/btn_switch_camera"
-            android:layout_marginLeft="16dip"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dip"
-            android:contentDescription="@string/imageview_desc"
-            android:src="@mipmap/btn_flash_off"/>
-    </RelativeLayout>
-
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <!-- 显示预览图形 -->
     <com.sina.videoedit.video.CameraContainer
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/camera_header_bar"/>
+        android:layout_height="match_parent" />
 
     <RelativeLayout
-        android:id="@+id/camera_bottom_bar"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@id/container"
-        android:clickable="true"
-        android:paddingBottom="@dimen/camera_bottom_bar_bottom">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="16dp"
-            android:text="预览"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:visibility="gone"/>
+        <RelativeLayout
+            android:id="@+id/camera_header_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:clickable="true">
 
-        <TextView
-            android:id="@+id/complete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp"
-            android:text="完成"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="16dip"
+                android:src="@mipmap/btn_close_camera" />
 
-        <TextView
-            android:id="@+id/preview_cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="取消预览"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/btn_switch_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/imageview_desc"
+                android:src="@mipmap/btn_switch_camera" />
 
-        <com.sina.videoedit.video.CameraButton
-            android:id="@+id/btn_shutter_record"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_centerHorizontal="true"
+            <ImageView
+                android:id="@+id/btn_flash_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_toLeftOf="@id/btn_switch_camera"
+                android:contentDescription="@string/imageview_desc"
+                android:src="@mipmap/btn_flash_off" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/btn_record_state_init_selector"
-            android:contentDescription="@string/imageview_desc"
-            android:scaleType="fitXY"/>
+            android:layout_marginBottom="20dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:text="预览"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:text="完成"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/preview_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="取消预览"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <com.sina.videoedit.video.CameraButton
+                android:id="@+id/btn_shutter_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_record_state_init_selector"
+                android:contentDescription="@string/imageview_desc"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
+</FrameLayout>
 
-</RelativeLayout>

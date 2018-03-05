@@ -453,7 +453,8 @@ public class CameraContainer extends RelativeLayout implements CameraOperation {
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		int width = MeasureSpec.getSize(widthMeasureSpec);
-		int height = width * 4 / 3;
+//		int height = width * 4 / 3;
+		int height = MeasureSpec.getSize(heightMeasureSpec);
 		heightMeasureSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 	}
